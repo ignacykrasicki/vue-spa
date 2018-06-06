@@ -1,10 +1,14 @@
 import Vue from 'vue'
+import AppLayout from './theme/layout.vue'
+
+Vue.component('app', {
+  template: `
+
+  `
+})
 
 const app = new Vue({
-  data: {
-    hello: 'hi there7'
-  },
-  template: '<div id="app">{{ hello }} </div>'
+  ...AppLayout
 })
 
 export {app}
